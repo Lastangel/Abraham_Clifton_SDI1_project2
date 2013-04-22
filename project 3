@@ -6,22 +6,28 @@
 // Global Variables
 var tigerWarKing; // string
 var blackNinjas; // Array
+var walk;
 // Property string
 var Castle = {
-    tigerWarKing: "I decided to go on a walk with my love",
-    walk: function(gazing){
+    tigerWarKing: " I decided to go on a walk with my love. ",
+    walk: function(){
         var stroll = true;
         if(stroll === true){
          console.log(" we are standing at the castle's gorgeous fountian, ")
          console.log(" when suddenly I am hit with a dart from the shadows. ")
+         console.log(" My Love is gone!! ")
             } else {
-                console.log(
-                " Me and my wife are standing at the gardens I get a call, and I have to leave. ")
+         console.log(
+            " Me and my wife are standing at the gardens I get a call, and I have to leave. ")
          }
    },// end of method
-    Result: " I woke up my love was gone ",
+    Result: " I pack my gear and make for my leave, I must find her! ",
     
     
 }; // end of property
-console.log(Castle);
-//castleWalls("outRage");
+console.log(Castle.tigerWarKing);
+Castle.walk();
+console.log(Castle.Result)
+/* pick back up with tiger outside the castle walls runing into
+ * the merchant which will be my boolean property and method,
+ *     And go over flow chart also commit*/
