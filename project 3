@@ -1,0 +1,27 @@
+//alert("JavaScript works!");
+// Clifton Abraham
+// Project 3: SDI 1304
+// Adventures of a War King
+
+// Global Variables
+var tigerWarKing; // string
+var blackNinjas; // Array
+// Property string
+var Castle = {
+    tigerWarKing: "I decided to go on a walk with my love",
+    walk: function(gazing){
+        var stroll = true;
+        if(stroll === true){
+         console.log(" we are standing at the castle's gorgeous fountian, ")
+         console.log(" when suddenly I am hit with a dart from the shadows. ")
+            } else {
+                console.log(
+                " Me and my wife are standing at the gardens I get a call, and I have to leave. ")
+         }
+   },// end of method
+    Result: " I woke up my love was gone ",
+    
+    
+}; // end of property
+console.log(Castle);
+//castleWalls("outRage");
