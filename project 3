@@ -31,3 +31,34 @@ console.log(Castle.Result)
 /* pick back up with tiger outside the castle walls runing into
  * the merchant which will be my boolean property and method,
  *     And go over flow chart also commit*/
+// Property Boolean
+
+var theSearch = {
+    Info: function(trade){
+       var merchant  = true;
+       var goldWatch = true;
+       var Money =  100
+       var Cost  =  30 
+          Deal =  Money - Cost 
+        if(merchant ^ goldWatch === true){
+            console.log("I see a merchant down the road.")
+            console.log("I Approuch the merchant, he want's 30 gold and a gold watch.")
+            console.log("So I give him the money and the watch, and he told the ninjas went into the forest.")
+            
+        } else{
+           if(goldWatch === false){
+            console.log(" I had the money but not the watch he requested, so he just told me he saw them go to the left ")
+           } else{
+            if(Money < Cost){
+                console.log(" the watch isn't enough he gave me no information ")
+                
+            } 
+           }
+        } return theSearch.Info;
+          
+  }// end of method
+  
+}; // end of Property
+//console.log(theSearch.Info)
+var onTheRightPath  =  theSearch.Info("I got the Info")
+console.log(onTheRightPath);
