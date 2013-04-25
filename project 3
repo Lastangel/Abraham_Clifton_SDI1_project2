@@ -62,3 +62,33 @@ var theSearch = {
 //console.log(theSearch.Info)
 var onTheRightPath  =  theSearch.Info("I got the Info")
 console.log(onTheRightPath);
+
+// numbers property
+Bonus = {
+    Forest: function(){
+     var Vines = 50;
+     var Coins = 0;
+     var Money = 70;
+     //Coins = Coins + 4;
+     console.log(" I walk to the forest"
+                 +","
+                 + "I see Fifty vines I must cross them to get to the other side. ")
+     while(Vines > 0){
+        console.log(Vines
+                    +" Vines "
+                    + " Left "
+                    +  " not a problem ")
+        Vines = Vines - 5;
+        if(Vines > 0){
+            console.log(" Just a little bit more ");
+        
+        } else{
+            if(Vines == 0){
+                console.log(" I completed the challenge time to collect ")
+            }
+        }
+     }
+     }
+    
+};// end of property
+Bonus.Forest();
