@@ -65,30 +65,37 @@ console.log(onTheRightPath);
 
 // numbers property
 Bonus = {
-    Forest: function(){
-     var Vines = 50;
-     var Coins = 0;
-     var Money = 70;
-     //Coins = Coins + 4;
+    "Vines": 50,
+    "Coins": 100,
+    "Money": 70,
+    Forest: function(newGold, Completed){
      console.log(" I walk to the forest"
                  +","
-                 + "I see Fifty vines I must cross them to get to the other side. ")
-     while(Vines > 0){
-        console.log(Vines
+                 + "I see Fifty vines I must cross them to get to the other side. "
+                 + " Their is a reward ");
+     while(this.Vines > 0){
+        console.log(this.Vines
                     +" Vines "
                     + " Left "
-                    +  " not a problem ")
-        Vines = Vines - 5;
-        if(Vines > 0){
+                    +  " not a problem ");
+        this.Vines = Bonus.Vines - 5;
+        if(this.Vines > 0){
             console.log(" Just a little bit more ");
         
         } else{
-            if(Vines == 0){
-                console.log(" I completed the challenge time to collect ")
-            }
-        }
-     }
-     }
+            if(this.Vines == 0){
+            newGold = this.Money + this.Coins // Mutator method
+                console.log(" I completed the challenge time to collect ");
+                  return newGold;
+               
+            };  
+        };  
+     };// end of while loop
+      return Completed;
     
+     }// end of method
+     
 };// end of property
-Bonus.Forest();
+var completedBonus = Bonus.Forest(" Time to move On ");
+console.log(completedBonus + " gold I have  my prize ");
+//console.log();
