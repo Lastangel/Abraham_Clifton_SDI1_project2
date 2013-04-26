@@ -99,3 +99,24 @@ Bonus = {
 var completedBonus = Bonus.Forest(" Time to move On ");
 console.log(completedBonus + " gold I have  my prize ");
 //console.log();
+//Array Proerty
+var theBattle = {
+    "blackNinjas": [" Billy ",
+                    " Ray ",
+                    " Sal "],
+    "Talents"  :[" SmokeBombs ",
+                " ninjaStars ",
+                " wire "],
+     "Money"   :170,
+     "caveDoor":150,
+     "fight": function(){
+        console.log(" I Approuch a Cave with a door it reqiures 150 gold. ")
+      var openDoor  =   this.Money - this.caveDoor
+      for(var i = 0, z = 0, b = this.blackNinjas.length, t = this.Talents.length; i< b, z < t; i++, z++){
+                console.log(" I "  +  this.blackNinjas [i]  +  this.Talents [z])
+      }
+     }
+};// end of property
+//for(var i = 0, z=0 , b = blackNinjas.length, a= Attacks.length; i < b, z < a; i++, z++){
+       // console.log(" I " +  Attacks [z] + blackNinjas [i])
+theBattle.fight();
