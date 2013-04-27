@@ -104,19 +104,26 @@ var theBattle = {
     "blackNinjas": [" Billy ",
                     " Ray ",
                     " Sal "],
-    "Talents"  :[" SmokeBombs ",
-                " ninjaStars ",
-                " wire "],
+    "Talents"  :[" has smoke bombs, "       + " I ran past the bombs and stabbed billy with my sword ",
+                " pulled out ninja stars, " + "I dodged the ninja stars and threw Ray down the hole I saw ",
+                " uses special wire, "     + " I took the wire and choked Sal with it. "],
      "Money"   :170,
      "caveDoor":150,
-     "fight": function(){
-        console.log(" I Approuch a Cave with a door it reqiures 150 gold. ")
-      var openDoor  =   this.Money - this.caveDoor
-      for(var i = 0, z = 0, b = this.blackNinjas.length, t = this.Talents.length; i< b, z < t; i++, z++){
-                console.log(" I "  +  this.blackNinjas [i]  +  this.Talents [z])
+     "fight": function(Buy){
+        console.log(" I Approach a Cave with a door it reqiures 150 gold. ")
+        var openDoor  =   this.Money - this.caveDoor
+        if(this.Money < this.caveDoor){
+            console.log(" I dont have enuogh money for the door, GAME OVER!! ")
+        } else{
+            console.log( " I brought the door " + " I have " + openDoor +  " gold left ")
+            console.log(" I walked down the cave a little bit. When suddenly I saw them, The ninjas that took my wife!!")
+            console.log(" Start Battle!!! ")
+            for(var i = 0, z = 0, b = this.blackNinjas.length, t = this.Talents.length; i< b, z < t; i++, z++){
+                console.log(  this.blackNinjas [i]  +  this.Talents [z])
       }
-     }
+        }
+        return openDoor, Buy;
+     }// end of method
 };// end of property
-//for(var i = 0, z=0 , b = blackNinjas.length, a= Attacks.length; i < b, z < a; i++, z++){
-       // console.log(" I " +  Attacks [z] + blackNinjas [i])
-theBattle.fight();
+var Battle = theBattle.fight(" The day is won, I grab my wife and make my leave ");
+console.log(Battle + " I approach the castle gates exhausted. ")
