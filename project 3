@@ -7,10 +7,11 @@
 var tigerWarKing; // string
 var blackNinjas; // Array
 var walk;
+var merchant; // Boolean
 // Property string
 var Castle = {
     tigerWarKing: " I decided to go on a walk with my love. ",
-    walk: function(){
+    walk: function(Missing){
         var stroll = true;
         if(stroll === true){
          console.log(" we are standing at the castle's gorgeous fountian, ")
@@ -25,14 +26,7 @@ var Castle = {
     
     
 }; // end of property
-console.log(Castle.tigerWarKing);
-Castle.walk();
-console.log(Castle.Result)
-/* pick back up with tiger outside the castle walls runing into
- * the merchant which will be my boolean property and method,
- *     And go over flow chart also commit*/
 // Property Boolean
-
 var theSearch = {
     Info: function(trade){
        var merchant  = true;
@@ -40,10 +34,11 @@ var theSearch = {
        var Money =  100
        var Cost  =  30 
           Deal =  Money - Cost 
-        if(merchant ^ goldWatch === true){
+        if(merchant && goldWatch === true){
             console.log("I see a merchant down the road.")
             console.log("I Approuch the merchant, he want's 30 gold and a gold watch.")
-            console.log("So I give him the money and the watch, and he told the ninjas went into the forest.")
+            console.log("So I give him the money and the watch from town,"
+                        + "and he told me he saw Ninjas and they went into the forest.")
             
         } else{
            if(goldWatch === false){
@@ -54,15 +49,11 @@ var theSearch = {
                 
             } 
            }
-        } return theSearch.Info;
+        } return trade;
           
   }// end of method
   
 }; // end of Property
-//console.log(theSearch.Info)
-var onTheRightPath  =  theSearch.Info("I got the Info")
-console.log(onTheRightPath);
-
 // numbers property
 Bonus = {
     "Vines": 50,
@@ -91,14 +82,10 @@ Bonus = {
             };  
         };  
      };// end of while loop
-      return Completed;
+     return Completed;
     
      }// end of method
-     
 };// end of property
-var completedBonus = Bonus.Forest(" Time to move On ");
-console.log(completedBonus + " gold I have  my prize ");
-//console.log();
 //Array Proerty
 var theBattle = {
     "blackNinjas": [" Billy ",
@@ -125,5 +112,26 @@ var theBattle = {
         return openDoor, Buy;
      }// end of method
 };// end of property
+// object property  Json data
+var tigerStory = {
+    mainCharacter: " Tiger War King ",
+    "Place"   : "Castle",
+    "Enemy"   : "The black ninjas",
+    "Conflict": " The ninjas captured the queen",
+    "Trading" : "The Merchant",
+    "Bonus"   : "Special prize Vines",
+    "Fight"   : "The main battle"};
+    
+    
+console.log(Castle.tigerWarKing);
+Castle.walk("Must find her");
+console.log(Castle.Result)
+var onTheRightPath  =  theSearch.Info("I got the Information I needed"
+                        + "," +" Time to make my way to the forest ")
+console.log(onTheRightPath);
+var completedBonus = Bonus.Forest();
+console.log(completedBonus + " Total gold, I have  my prize "
+            + " Time to move on and find my wife. ");
 var Battle = theBattle.fight(" The day is won, I grab my wife and make my leave ");
 console.log(Battle + " I approach the castle gates exhausted. ")
+ console.log(tigerStory);
